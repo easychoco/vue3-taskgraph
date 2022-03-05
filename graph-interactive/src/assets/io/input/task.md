@@ -1,0 +1,36 @@
+# 今回の開発は、7時間かかるだろう
+
+- 第0階層
+  - [ ] editor
+    - **説明**: 表示している json を出す／1時間
+    - `<pre />` で表示するだけ
+    - いらない気がしてきた
+  - [ ] task
+    - **説明**: タスクひとつぶん／1時間
+    - **依存**: @input
+    - 入力できる
+    - ドラッグできる
+  - [ ] add-button
+    - **説明**: 押すとタスクが増える／1時間
+    - **依存**: @button
+  - [ ] delete-button
+    - **説明**: 押すとタスクが消える／1時間
+    - **依存**: @button
+  - [ ] trash-box
+    - **説明**: ゴミ箱／1時間
+    - タスクをドラッグすると消える
+- 第1階層
+  - [ ] diagram
+    - **説明**: taskgraph の task を操作する／1時間
+    - **依存**: @draggable、task、add-button、delete-button、trash-box
+    - task を draggable で動かしたーい
+    - input で入力
+    - add-button で task 追加
+    - delete-button で消える
+    - trash-box にドラッグすると消える
+- 第2階層
+  - [ ] main-page
+    - **説明**: メインページ／1時間
+    - **依存**: diagram、editor
+    - 右に diagram
+    - 左に editor

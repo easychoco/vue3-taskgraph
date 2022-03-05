@@ -1,0 +1,81 @@
+{
+  "tasks": [
+    {
+      "name": "main-page",
+      "description": "メインページ",
+      "difficulty": "easy",
+      "depends": [
+        "diagram",
+        "editor"
+      ],
+      "notes": [
+        "右に diagram",
+        "左に editor"
+      ]
+    },
+    {
+      "name": "editor",
+      "description": "表示している json を出す",
+      "difficulty": "easy",
+      "notes": [
+        "`<pre />` で表示するだけ",
+        "いらない気がしてきた"
+      ]
+    },
+    {
+      "name": "diagram",
+      "description": "taskgraph の task を操作する",
+      "difficulty": "easy",
+      "depends": [
+        "@draggable",
+        "task",
+        "add-button",
+        "delete-button",
+        "trash-box"
+      ],
+      "notes": [
+        "task を draggable で動かしたーい",
+        "input で入力",
+        "add-button で task 追加",
+        "delete-button で消える",
+        "trash-box にドラッグすると消える"
+      ]
+    },
+    {
+      "name": "task",
+      "description": "タスクひとつぶん",
+      "difficulty": "easy",
+      "depends": [
+        "@input"
+      ],
+      "notes": [
+        "入力できる",
+        "ドラッグできる"
+      ]
+    },
+    {
+      "name": "add-button",
+      "description": "押すとタスクが増える",
+      "difficulty": "easy",
+      "depends": [
+        "@button"
+      ]
+    },
+    {
+      "name": "delete-button",
+      "description": "押すとタスクが消える",
+      "difficulty": "easy",
+      "depends": [
+        "@button"
+      ]
+    },
+    {
+      "name": "trash-box",
+      "description": "ゴミ箱",
+      "difficulty": "easy",
+      "notes": [
+        "タスクをドラッグすると消える"
+      ]
+    }
+  ]
+}
